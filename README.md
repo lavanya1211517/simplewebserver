@@ -134,6 +134,9 @@ httpd.serve_forever()
 
 <img width="1917" height="1017" alt="Screenshot 2026-11-04 195512" src="https://github.com/user-attachments/assets/6bb3bfcc-95d9-40b4-9993-32752e52867d" />
 
+<img width="1727" height="911" alt="VS Code Web Server Terminal Output" src="https://github.com/user-attachments/assets/6534e9a6-3d69-4a2a-83c5-fe6aa9d476b5" />
+
+
 
 
 ## RESULT:
