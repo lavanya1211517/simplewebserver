@@ -40,14 +40,13 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content = """
 <html>
-<html>
-  <head>
-    <title>Sample Web Page</title>
-  </head>
+<head>
+    <title>sample webpage</title>
+</head>
+<body>
 
-  <body>
-    <h1>Lavanya V</h1>
-    <h2>26009527</h2>
+    <p><b>Lavanya V</b></p>
+    <p><b>26009527</b></p>
 
     <table border="2" cellpadding="10">
         <caption>My Laptop Configuration</caption>
@@ -113,8 +112,9 @@ content = """
         </tr>
 
     </table>
-   </body>
-</html>        
+
+</body>      
+</html>
 """
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
