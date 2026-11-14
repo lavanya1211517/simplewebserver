@@ -1,5 +1,5 @@
 # EX01 Developing a Simple Webserver
-## Date:02-11-2026
+## Date:29-09-2026
 
 ## AIM:
 To develop a simple webserver to serve html pages and display the Windows Specifications of your Laptop.
@@ -40,77 +40,35 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content = """
 <html>
-  <head>
-     <title>Details of Laptop</title>
-  </head>
-<body>
-<p><b>Lavanya V (26009527)</b>
+    <head>
+        <title>laptop Device Information</title>
+    </head>
+    <body>
+        <h1>Lavanya V (26009527)</h1>
 
-<table border="4" cellspacing="5" cellpadding="20">
-<caption>Laptop Device Information</caption>
-
-<tr>
- <th>S.No</th>
- <th>Device Type</th>
- <th>Device Information</th>
-</tr>
-
-<tr>
- <td>1</td>
- <td>Device Name</td>
- <td>TL15-53M-G2</td>
-</tr>
-
-<tr>
- <td>2</td>
- <td>Processor</td>
- <td>Intel(R) Core(TM) 5 210H (2.20 GHz)</td>
-</tr>
-
-<tr>
- <td>3</td>
- <td>Installed RAM</td>
- <td>16.0 GB (15.7 GB usable)</td>
-</tr>
-
-<tr>
- <td>4</td>
- <td>Graphics Card</td>
- <td>Intel(R) Graphics (128 MB)</td>
-</tr>
-
-<tr>
- <td>5</td>
- <td>Storage</td>
- <td>133 GB of 477 GB used</td>
-</tr>
-
-<tr>
- <td>6</td>
- <td>Device ID</td>
- <td>71A6EEFB-94A1-4093-92E5-CA3C04EEA372</td>
-</tr>
-
-<tr>
- <td>7</td>
- <td>Product ID</td>
- <td>00342-42943-38785-AAOEM</td>
-</tr>
-
-<tr>
- <td>8</td>
- <td>System Type</td>
- <td>64-bit operating system, x64-based processor</td>
-</tr>
-
-<tr>
- <td>9</td>
- <td>Pen and Touch</td>
- <td>No pen or touch input is available for this display</td>
-</tr>
-
-</table>
-  </body>
+        <table border="1" cellspacing="5" cellpaddiing="5">
+          <tr bgcolor="">
+            <th>S.no</th>
+            <th>Device Name</th>
+            <th>Installed Ram</th>
+            <th>Processor</th>
+            <th>System Type</th>
+            <th>storage</th>
+            <th>Device ID</th>
+            <th>Product ID</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>TL15-53M-G2</td>
+            <td>16.0 GB(15.7 GB usable) </td>
+            <td>Intel(R) Core(TM) 5 210H (2.20 GHz)</td>
+            <td>64-bit operating system, x64-based processor</td>
+            <td>130 GB of 477 GB used</td>
+            <td>71A6EEFB-94A1-4093-92E5-CA3C04EEA372</td>
+            <td>00342-42943-38785-AAOEM</td>
+          </tr>
+        </table>
+    </body>
 </html>
 """
 class myhandler(BaseHTTPRequestHandler):
@@ -129,11 +87,9 @@ httpd.serve_forever()
 
 
 ## OUTPUT:
-![alt text](<Screenshot 2026-11-10 120825.png>)
+![alt text](<Screenshot 2026-11-14 141222-1.png>)
 
-
-![alt text](image.png)
-
+![alt text](<Screenshot 2026-11-14 141624.png>)
 
 
 ## RESULT:
